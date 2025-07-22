@@ -40,7 +40,9 @@ export default function Header() {
         <img
           src="/avatar.png"
           alt="User Avatar"
-          className="w-8 h-8 rounded-full object-cover"
+          width={25} 
+            height={25} 
+          className="rounded-full object-cover shadow-md border-4 border-white"
         />
       </div>
     </header>

@@ -23,6 +23,8 @@ export default function Sidebar() {
           <SidebarLink icon={<FaSlidersH />} label="Settings" active />
         </nav>
       </div>
+ 
+    
 
       {/* Bottom Section */}
       <div className="p-4 border-t">
@@ -30,7 +32,9 @@ export default function Sidebar() {
           <img
             src="/avatar.png"
             alt="Admin"
-            className="w-10 h-10 rounded-full object-cover"
+            width={25} 
+            height={25} 
+            className="rounded-full object-cover shadow-md border-4 border-white"
           />
           <div>
             <p className="text-sm font-medium text-gray-800">John Smith</p>
