@@ -9,7 +9,8 @@
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
-    "pages:deploy": "wrangler pages deploy .vercel/output/static --project-name=admin-panel-ui"
+    "pages:deploy": "wrangler pages deploy .vercel/output/static --project-name=admin-panel-ui",
+    "cf-build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.6",
