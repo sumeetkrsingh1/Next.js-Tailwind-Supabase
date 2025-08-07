@@ -6,7 +6,7 @@ import StoreSidebarRight from "../components/StoreSidebarRight";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { supabase } from '@/lib/supabaseClient';
-export const runtime = "experimental-edge";
+export const runtime = "edge";
 
 export default function Dashboard() {
   const router = useRouter();

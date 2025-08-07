@@ -1,5 +1,10 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// pages/api/hello.js
 
-export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
+export const runtime = 'edge'; // Required for Cloudflare Pages
+
+export default async function handler(req) {
+  return new Response(JSON.stringify({ name: 'John Doe' }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
