@@ -6,10 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "pages:deploy": "wrangler pages deploy .vercel/output/static --project-name=admin-panel-ui"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.6",
+    "@opennextjs/cloudflare": "^1.6.5",
     "@supabase/supabase-js": "^2.52.0",
     "framer-motion": "^12.23.6",
     "lucide-react": "^0.525.0",
@@ -19,11 +23,13 @@
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13",
     "@tailwindcss/postcss": "^4",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "wrangler": "^4.28.1"
   }
 }
