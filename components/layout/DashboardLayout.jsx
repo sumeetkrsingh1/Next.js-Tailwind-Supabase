@@ -1,6 +1,6 @@
 import Sidebar from "../Sidebar";
 import Header from "../Header";
-export const runtime = "experimental-edge";
+export const runtime = 'experimental-edge';
 
 export default function DashboardLayout({ children }) {
   return (
